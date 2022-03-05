@@ -25,7 +25,6 @@ import { Flex, Text, Heading } from '@chakra-ui/react';
 import { DateTime } from 'luxon';
 import { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 
 const Page: NextPage = () => {
   const birthday = DateTime.fromJSDate(new Date(2004, 2, 24));
