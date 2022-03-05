@@ -81,11 +81,7 @@ const Page: NextPage = () => {
         <meta property="og:url" content="https://floof.gay" />
       </Head>
 
-      <Container minHeight={{ base: '100vh', lg: '100vh' }} height={{ base: 'auto', lg: '100vh' }} width="100%">
-        <Box h="10%" w="85%" pt={{ base: '4', lg: '0' }}>
-          <Navbar />
-        </Box>
-
+      <Container>
         <Center maxW="7xl" mt="2em" flexDirection="column" rowGap="1em" textAlign="center">
           <Avatar src="https://cdn.floofy.dev/images/August.png" w="175px" h="175px" draggable="false">
             <AvatarBadge boxSize="50px" bg={statusColor} mb="0.95em" />
@@ -104,7 +100,7 @@ const Page: NextPage = () => {
               <FontAwesomeIcon icon={['fab', 'discord']} color="#5865F2" size="3x" />
             </NavLink>
 
-            <NavLink href="https://twitter.com/auguuwu">
+            <NavLink href="https://twitter.com/rainyynoel">
               <FontAwesomeIcon icon={['fab', 'twitter']} color="#1DA1F2" size="3x" />
             </NavLink>
 

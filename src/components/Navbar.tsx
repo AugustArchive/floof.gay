@@ -55,6 +55,10 @@ const Navbar: FC = () => {
           <NavLink href="/tech" mr="12">
             Tech
           </NavLink>
+
+          <NavLink href="/about" mr="12">
+            About
+          </NavLink>
         </Box>
 
         <Spacer />

@@ -21,85 +21,167 @@
  * SOFTWARE.
  */
 
-import { Avatar, AvatarBadge, Box, Container, Stack, Text } from '@chakra-ui/react';
+import { Flex, Heading, ListItem, Text, UnorderedList, useColorModeValue } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
 
-const Page: NextPage = () => {
-  return (
-    <>
-      <Head>
-        <title>Noel 🌺 - Setup | Tech</title>
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Shows what Noel uses for his setup and his development environment. :)" />
-        <meta name="theme-color" content="#FF69BD" />
-        <meta
-          property="og:description"
-          content="Shows what Noel uses for his setup and his development environment. :)"
-        />
-        <meta property="og:title" content="Noel 🌺 - Setup | Tech" />
-        <meta property="og:image" content="/favicon.ico" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://floof.gay/tech" />
-      </Head>
+const Page: NextPage = () => (
+  <>
+    <Head>
+      <title>Noel 🌺 - Setup | Tech</title>
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="Shows what Noel uses for his setup and his development environment. :)" />
+      <meta name="theme-color" content="#FF69BD" />
+      <meta
+        property="og:description"
+        content="Shows what Noel uses for his setup and his development environment. :)"
+      />
+      <meta property="og:title" content="Noel 🌺 - Setup | Tech" />
+      <meta property="og:image" content="/favicon.ico" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://floof.gay/tech" />
+    </Head>
 
-      <Container minHeight={{ base: '100vh', lg: '100vh' }} height={{ base: 'auto', lg: '100vh' }} width="100%">
-        <Box h="10%" w="85%" pt={{ base: '4', lg: '0' }}>
-          <Navbar />
-        </Box>
-      </Container>
-    </>
-  );
-};
+    <Flex flexDir="column" mt="1.67rem" px={4} as="main" maxW="4xl" mx="auto" rowGap="1em">
+      <Heading as="h1" size="2xl">
+        Noel's Tech
+      </Heading>
 
-/*
-  <Avatar>
-    <AvatarBadge boxSize='1.25em' bg='green.500' />
-  </Avatar>
-*/
+      <Text as="h2" fontSize="x-large">
+        This is a curated list of what tech I have in my room with me right now, and my tech stack sandwich. :)
+      </Text>
 
-/*
-        <Container as={Stack} maxW="7xl">
-          <Image
-            src="https://cdn.floofy.dev/images/August.png"
-            width="250px"
-            height="250px"
-            draggable="false"
-            rounded="full"
-            alt="noel avatar by @SevernSamuel on twitter!"
-          />
+      <Heading as="h1" size="xl">
+        Software and Services
+      </Heading>
 
-          <Text fontSize="4xl" fontFamily="Cantarell">
-            Noel{' '}
-            <Text as="span" fontSize="1.2rem">
-              [he/him]
-            </Text>
+      <Text as="h2" fontSize="x-large">
+        This is a list of software and services I use on a daily basis.
+      </Text>
+
+      <UnorderedList>
+        <ListItem key="editors">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Editors: Visual Studio Code (free; any language)
           </Text>
-
-          <Text fontSize="2xl" fontFamily="Inter">
-            {age} year old developer tinkering with code, and sometimes... it works! or maybe not? who knows!
+        </ListItem>
+        <ListItem key="ide-1">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            IDE #1: JetBrains IntelliJ IDEA Community (free; Kotlin)
           </Text>
+        </ListItem>
+        <ListItem key="ide-2">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            IDE #2: JetBrains GoLand (paid; Go)
+          </Text>
+        </ListItem>
+        <ListItem key="terminal">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Terminal: Alacritty
+          </Text>
+        </ListItem>
+        <ListItem key="terminal">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Shell: zsh with oh my zsh under the af-magic theme
+          </Text>
+        </ListItem>
+        <ListItem key="terminal">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Music Streaming: Spotify and Jellyfin (local music)
+          </Text>
+        </ListItem>
+        <ListItem key="terminal">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Entertainment: Disney+, Hulu
+          </Text>
+        </ListItem>
+      </UnorderedList>
 
-          <Flex ml="-0.6em">
-            <NavLink href="https://discord.com/users/280158289667555328">
-              <FontAwesomeIcon icon={['fab', 'discord']} color="#5865F2" size="2x" />
-            </NavLink>
+      <Heading as="h1" size="xl">
+        Computer Setup
+      </Heading>
 
-            <NavLink href="https://twitter.com/auguuwu">
-              <FontAwesomeIcon icon={['fab', 'twitter']} color="#1DA1F2" size="2x" />
-            </NavLink>
+      <Text as="h2" fontSize="x-large">
+        This is my main computer setup. I can already tell that you're laughing and yes, this is old parts that I got
+        from my older brother, but it works for me, so... ┐(~ー~;)┌
+      </Text>
 
-            <NavLink href="https://t.me/auguwu">
-              <FontAwesomeIcon icon={['fab', 'telegram']} color="#0088CC" size="2x" />
-            </NavLink>
+      <UnorderedList>
+        <ListItem key="operating-systems">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Operating Systems: Arch Linux (development), Windows 11 (gaming)
+          </Text>
+        </ListItem>
+        <ListItem key="motherboard">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Motherboard: ASRock AB350 Pro4
+          </Text>
+        </ListItem>
+        <ListItem key="system-ram">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            System RAM: 32GB (2 16GB DDR4 sticks)
+          </Text>
+        </ListItem>
+        <ListItem key="cpu">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            CPU: AMD Ryzen 7 2700X Eight-Core Processor
+          </Text>
+        </ListItem>
+        <ListItem key="hard-drives">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Hard Drives: 120GB SSD, 1TB SSD, 2TB HDD
+          </Text>
+        </ListItem>
+        <ListItem key="gpu">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            GPU: NVIDIA GeForce GTX 1070 Ti
+          </Text>
+        </ListItem>
+        <ListItem key="microphone">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Microphone: Blue Snowball
+          </Text>
+        </ListItem>
+        <ListItem key="keyboard">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Keyboard: Redragon K551 (Cherry Blue Switches)
+          </Text>
+        </ListItem>
+      </UnorderedList>
 
-            <NavLink href="https://github.com/auguwu">
-              <FontAwesomeIcon icon={['fab', 'github']} color={useColorModeValue('#333333', 'gray.400')} size="2x" />
-            </NavLink>
-          </Flex>
-        </Container>
-*/
+      <Heading as="h1" size="xl">
+        Physical Hardware
+      </Heading>
+
+      <Text as="h2" fontSize="x-large">
+        This is all the stuff I can use on a daily basis.
+      </Text>
+
+      <UnorderedList>
+        <ListItem key="phone">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Phone: iPhone 13 Pro
+          </Text>
+        </ListItem>
+        <ListItem key="old-phone">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Old Phones: Samsung Galaxy S9
+          </Text>
+        </ListItem>
+        <ListItem key="old-phone">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            VR: Oculus Quest 2
+          </Text>
+        </ListItem>
+        <ListItem key="old-phone">
+          <Text color="gray.200" fontSize="xl" textColor={useColorModeValue('#191919', 'gray.300')}>
+            Consoles: Nintendo Switch (original)
+          </Text>
+        </ListItem>
+      </UnorderedList>
+    </Flex>
+  </>
+);
 
 export default Page;

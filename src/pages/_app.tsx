@@ -22,17 +22,26 @@
  */
 
 import { faDiscord, faGithub, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, Flex, Box } from '@chakra-ui/react';
 import type { AppProps } from 'next/app';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import theme from '../theme';
+import Navbar from '../components/Navbar';
 
 library.add(faDiscord, faTwitter, faTelegram, faGithub);
 
 export default function FloofApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Component {...pageProps} />
+      <Flex direction="column" alignItems="center" mt="2rem">
+        <Box h="10%" w="85%" pt={{ base: '4', lg: '0' }}>
+          <Navbar />
+        </Box>
+      </Flex>
+
+      <Flex direction="row" px={[4, 6, 8]} py={[2, 4, 6]}>
+        <Component {...pageProps} />
+      </Flex>
     </ChakraProvider>
   );
 }
