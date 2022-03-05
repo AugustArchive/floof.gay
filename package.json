@@ -1,0 +1,53 @@
+{
+  "name": "@noel/floof.gay",
+  "description": "🍂 Source code for floof.gay, a personal site that tells more about my furry side.",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Noel <cutie@floofy.dev>",
+  "homepage": "https://floofy.dev",
+  "repository": "https://github.com/auguwu/paw",
+  "bugs": "https://github.com/auguwu/paw/issues",
+  "license": "MIT",
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "lint": "eslint src --ext .ts,.tsx --fix",
+    "dev": "yarn lint && yarn fmt && next dev -p 3621",
+    "fmt": "prettier --config ./.prettierrc.json --write ."
+  },
+  "dependencies": {
+    "@chakra-ui/react": "1.8.6",
+    "@emotion/react": "11.8.1",
+    "@emotion/styled": "11.8.1",
+    "@fontsource/cantarell": "4.5.2",
+    "@fontsource/inter": "4.5.4",
+    "@fortawesome/fontawesome-svg-core": "1.3.0",
+    "@fortawesome/free-brands-svg-icons": "6.0.0",
+    "@fortawesome/react-fontawesome": "0.1.17",
+    "@heroicons/react": "1.0.6",
+    "framer-motion": "6.2.8",
+    "luxon": "2.3.1",
+    "next": "12.1.0",
+    "next-pwa": "^5.4.5",
+    "react": "17.0.2",
+    "react-devicons": "2.14.0",
+    "react-dom": "17.0.2",
+    "twemoji": "13.1.0",
+    "use-lanyard": "1.1.0"
+  },
+  "devDependencies": {
+    "@augu/eslint-config": "2.2.0",
+    "@augu/tsconfig": "1.1.1",
+    "@types/luxon": "2.3.0",
+    "@types/node": "17.0.8",
+    "@types/react": "17.0.39",
+    "@types/twemoji": "12.1.2",
+    "@typescript-eslint/eslint-plugin": "5.13.0",
+    "@typescript-eslint/parser": "5.13.0",
+    "eslint": "8.10.0",
+    "eslint-config-prettier": "8.5.0",
+    "next-sitemap": "2.5.4",
+    "prettier": "2.5.1",
+    "typescript": "4.6.2"
+  }
+}
