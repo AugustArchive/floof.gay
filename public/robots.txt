@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://floof.gay
+
+# Sitemaps
+Sitemap: https://floof.gay/sitemap.xml

@@ -9,6 +9,7 @@
   "bugs": "https://github.com/auguwu/paw/issues",
   "license": "MIT",
   "scripts": {
+    "sitemap": "next-sitemap",
     "start": "next start",
     "build": "next build",
     "lint": "eslint src --ext .ts,.tsx --fix",

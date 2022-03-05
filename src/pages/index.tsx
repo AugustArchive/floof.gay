@@ -83,7 +83,7 @@ const Page: NextPage = () => {
 
       <Container>
         <Center maxW="7xl" mt="2em" flexDirection="column" rowGap="1em" textAlign="center">
-          <Avatar src="https://cdn.floofy.dev/images/August.png" w="175px" h="175px" draggable="false">
+          <Avatar src="https://cdn.floofy.dev/images/August.png" w="175px" h="175px" draggable="false" name="Noel">
             <AvatarBadge boxSize="50px" bg={statusColor} mb="0.95em" />
           </Avatar>
 
