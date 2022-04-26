@@ -30,9 +30,9 @@
     "luxon": "2.3.2",
     "next": "12.1.5",
     "next-pwa": "5.5.2",
-    "react": "18.0.0",
+    "react": "18.1.0",
     "react-devicons": "2.14.0",
-    "react-dom": "18.0.0",
+    "react-dom": "18.1.0",
     "twemoji": "14.0.2",
     "use-lanyard": "1.1.0"
   },
