@@ -3794,10 +3794,10 @@ next-pwa@5.5.4:
     workbox-webpack-plugin "^6.5.3"
     workbox-window "^6.5.3"
 
-next-sitemap@3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.5.tgz#7dd94fa9611d4d9547956af4fbb97174eeda5cf4"
-  integrity sha512-sV8xkiErDmlvW9/vKJCxM5cdhQl9gxahv+og/eqDdf6gvG9eDak1bHn5aRSMTQhSNCA/cGjLIDzRaqc5N1HEXA==
+next-sitemap@3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.6.tgz#34586f5a788bae013893836142c726c2cb1ae04c"
+  integrity sha512-XQ1WQuW5/tkgkqxKhW898nvnuGghLK/raCsP0CkBTuB/Zyl3abF06jzkWQ0747ubWSCyDHdB9nP3SZdyMW0uIw==
   dependencies:
     "@corex/deepmerge" "^4.0.26"
     minimist "^1.2.6"
