@@ -1982,10 +1982,10 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.179.tgz#490ec3288088c91295780237d2497a3aa9dfb5c5"
   integrity sha512-uwc1x90yCKqGcIOAT6DwOSuxnrAbpkdPsUOZtwrXb4D/6wZs+6qG7QnIawDuZWg0sWpxl+ltIKCaLoMlna678w==
 
-"@types/luxon@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-2.3.2.tgz#8a3f2cdd4858ce698b56cd8597d9243b8e9d3c65"
-  integrity sha512-WOehptuhKIXukSUUkRgGbj2c997Uv/iUgYgII8U7XLJqq9W2oF0kQ6frEznRQbdurioz+L/cdaIm4GutTQfgmA==
+"@types/luxon@2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-2.4.0.tgz#897d3abc23b68d78b69d76a12c21e01eb5adab95"
+  integrity sha512-oCavjEjRXuR6URJEtQm0eBdfsBiEcGBZbq21of8iGkeKxU1+1xgKuFPClaBZl2KB8ZZBSWlgk61tH6Mf+nvZVw==
 
 "@types/minimatch@*":
   version "3.0.5"
