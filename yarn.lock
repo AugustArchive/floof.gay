@@ -1836,10 +1836,10 @@
   dependencies:
     prop-types "^15.8.1"
 
-"@heroicons/react@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.4.tgz#d82bf1ab146e52bb6f73ec088ec8a3e19d418a62"
-  integrity sha512-6C3CPY0vfWSHIMH0lr2L0KUJpPnKAnxgnzsiW0hXp8k9xu95ZFX5Qx4JQqZbQ1LsaGRyFqtyAnW5VerDY2XUdA==
+"@heroicons/react@2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.7.tgz#d5a95c7c8ae19f651721b0f9ae3f6fa8b2f6922e"
+  integrity sha512-eo6EwIwVYDz6SMHXgTe2wK56jrAS2c8eVUFKxt2eJYGxQwbi4eFZSP5gLvkDbEBsClMxPDWgudnGRi5X2ZrETw==
 
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
